@@ -27,6 +27,7 @@ class Program
         Console.Write("Введите стартовую вершину: ");
         if (!int.TryParse(Console.ReadLine(), out int start))
         {
+            //обработка исключений некорректного ввода вершины a
             Console.WriteLine("Неверный ввод.");
             return;
         }
@@ -34,6 +35,7 @@ class Program
         Console.Write("Введите конечную вершину: ");
         if (!int.TryParse(Console.ReadLine(), out int target))
         {
+            //обработка исключений некорректного ввода вершины b
             Console.WriteLine("Неверный ввод.");
             return;
         }

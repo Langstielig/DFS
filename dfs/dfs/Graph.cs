@@ -9,6 +9,7 @@
             if (!adjacencyList.ContainsKey(a)) adjacencyList[a] = new List<int>();
             if (!adjacencyList.ContainsKey(b)) adjacencyList[b] = new List<int>();
 
+            //Добавление вершин в граф
             adjacencyList[a].Add(b);
             adjacencyList[b].Add(a);
         }
@@ -27,6 +28,7 @@
 
             if (!adjacencyList.ContainsKey(current)) return null;
 
+            //Вычисление длины пути
             foreach (var neighbor in adjacencyList[current])
             {
                 if (!visited.Contains(neighbor))
