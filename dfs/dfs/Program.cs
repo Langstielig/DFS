@@ -5,7 +5,7 @@ class Program
     static void Main()
     {
         Graph graph = new Graph();
-        Console.WriteLine("Введите пары рёбер через пробел, пустая строка — завершить:");
+        Console.WriteLine("Введите пары рёбер через пробел. Пустая строка — завершить:");
 
         while (true)
         {
@@ -25,15 +25,28 @@ class Program
         }
 
         Console.Write("Введите стартовую вершину: ");
-        if (!int.TryParse(Console.ReadLine(), out int startNode))
+        if (!int.TryParse(Console.ReadLine(), out int start))
         {
-            Console.WriteLine("Неверный ввод стартовой вершины.");
+            Console.WriteLine("Неверный ввод.");
             return;
         }
 
-        List<int> dfsPath = graph.DFS(startNode);
+        Console.Write("Введите конечную вершину: ");
+        if (!int.TryParse(Console.ReadLine(), out int target))
+        {
+            Console.WriteLine("Неверный ввод.");
+            return;
+        }
 
-        Console.WriteLine("Путь обхода в глубину:");
-        Console.WriteLine(string.Join(", ", dfsPath));
+        var pathLength = graph.DFSFindPathLength(start, target);
+
+        if (pathLength != null)
+        {
+            Console.WriteLine($"Длина пути от {start} до {target}: {pathLength}");
+        }
+        else
+        {
+            Console.WriteLine($"Путь от {start} до {target} не найден.");
+        }
     }
 }

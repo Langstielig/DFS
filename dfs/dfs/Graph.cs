@@ -10,30 +10,33 @@
             if (!adjacencyList.ContainsKey(b)) adjacencyList[b] = new List<int>();
 
             adjacencyList[a].Add(b);
-            adjacencyList[b].Add(a); // неориентированный граф
+            adjacencyList[b].Add(a);
         }
 
-        public List<int> DFS(int start)
+        public int? DFSFindPathLength(int start, int target)
         {
             var visited = new HashSet<int>();
-            var result = new List<int>();
-            DFSRecursive(start, visited, result);
-            return result;
+            return DFSRecursive(start, target, visited, 0);
         }
 
-        private void DFSRecursive(int current, HashSet<int> visited, List<int> result)
+        private int? DFSRecursive(int current, int target, HashSet<int> visited, int depth)
         {
-            if (visited.Contains(current)) return;
+            if (current == target) return depth;
 
             visited.Add(current);
-            result.Add(current);
 
-            if (!adjacencyList.ContainsKey(current)) return;
+            if (!adjacencyList.ContainsKey(current)) return null;
 
             foreach (var neighbor in adjacencyList[current])
             {
-                DFSRecursive(neighbor, visited, result);
+                if (!visited.Contains(neighbor))
+                {
+                    var result = DFSRecursive(neighbor, target, visited, depth + 1);
+                    if (result != null) return result;
+                }
             }
+
+            return null;
         }
     }
 }
