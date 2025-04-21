@@ -1,0 +1,15 @@
+C:\Users\Пользователь\DFS\DFS\dfs\dfs\bin\Debug\net7.0\dfs.exe
+C:\Users\Пользователь\DFS\DFS\dfs\dfs\bin\Debug\net7.0\dfs.deps.json
+C:\Users\Пользователь\DFS\DFS\dfs\dfs\bin\Debug\net7.0\dfs.runtimeconfig.json
+C:\Users\Пользователь\DFS\DFS\dfs\dfs\bin\Debug\net7.0\dfs.dll
+C:\Users\Пользователь\DFS\DFS\dfs\dfs\bin\Debug\net7.0\dfs.pdb
+C:\Users\Пользователь\DFS\DFS\dfs\dfs\obj\Debug\net7.0\dfs.csproj.AssemblyReference.cache
+C:\Users\Пользователь\DFS\DFS\dfs\dfs\obj\Debug\net7.0\dfs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Пользователь\DFS\DFS\dfs\dfs\obj\Debug\net7.0\dfs.AssemblyInfoInputs.cache
+C:\Users\Пользователь\DFS\DFS\dfs\dfs\obj\Debug\net7.0\dfs.AssemblyInfo.cs
+C:\Users\Пользователь\DFS\DFS\dfs\dfs\obj\Debug\net7.0\dfs.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\DFS\DFS\dfs\dfs\obj\Debug\net7.0\dfs.dll
+C:\Users\Пользователь\DFS\DFS\dfs\dfs\obj\Debug\net7.0\refint\dfs.dll
+C:\Users\Пользователь\DFS\DFS\dfs\dfs\obj\Debug\net7.0\dfs.pdb
+C:\Users\Пользователь\DFS\DFS\dfs\dfs\obj\Debug\net7.0\dfs.genruntimeconfig.cache
+C:\Users\Пользователь\DFS\DFS\dfs\dfs\obj\Debug\net7.0\ref\dfs.dll
