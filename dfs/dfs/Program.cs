@@ -7,7 +7,7 @@ class Program
         Graph graph = new Graph();
         Console.WriteLine("Введите пары рёбер через пробел. Пустая строка — завершить:");
 
-        //Ввод ребер
+        //Input of edges
         while (true)
         {
             string line = Console.ReadLine();
@@ -25,7 +25,7 @@ class Program
             graph.AddEdge(a, b);
         }
 
-        //Ввод вершин
+        //Input of vertices
         Console.Write("Введите стартовую вершину: ");
         if (!int.TryParse(Console.ReadLine(), out int start))
         {
@@ -42,7 +42,7 @@ class Program
             return;
         }
 
-        //Вычисление длины пути
+        //Path length calculation
         var pathLength = graph.DFSFindPathLength(start, target);
 
         if (pathLength != null)
